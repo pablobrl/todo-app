@@ -1,0 +1,50 @@
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+	text-transform: uppercase;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: bold;
+	min-height: 2rem;
+	height: max-content;
+	padding: 0 1rem;
+	border-radius: 0.5rem;
+	border: none;
+	cursor: pointer;
+	transition-property: transform, background-color;
+	transition-duration: var(--t-duration);
+	transition-timing-function: var(--t-func);
+}
+
+.primary {
+	composes: button;
+	background-color: var(--c-primary-500);
+}
+
+.primary:hover {
+	background-color: var(--c-primary-600);
+}
+
+.primary:active {
+	transform: scale(0.9);
+	background-color: var(--c-primary-400);
+}
+
+.ghost {
+	composes: button;
+	background-color: transparent;
+	color: var(--c-txt-3);
+}
+
+.ghost:hover {
+	background-color: var(--c-ghost-1);
+	color: var(--c-txt-2);
+}
+
+.ghost:active {
+	transform: scale(0.9);
+	background-color: var(--c-ghost-2);
+	color: var(--c-txt-1);
+}

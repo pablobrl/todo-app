@@ -1,0 +1,35 @@
+.task {
+	background-color: var(--c-bg-2);
+	padding: 1rem;
+	border-radius: 1rem;
+}
+
+.taskContent {
+	margin-top: 1rem;
+}
+
+.taskOptions {
+	display: flex;
+	justify-content: end;
+	gap: 0.5rem;
+}
+
+.taskDate {
+	color: var(--c-txt-3);
+	align-self: flex-end;
+	margin-right: auto;
+}
+
+.taskHeader {
+	display: flex;
+	gap: 1rem;
+}
+
+.taskTitle {
+	flex: 1 1 0%;
+	max-width: calc(100% - 7.5rem);
+}
+
+.taskTitle h2 {
+	overflow-wrap: break-word;
+}

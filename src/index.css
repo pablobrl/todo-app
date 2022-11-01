@@ -1,0 +1,72 @@
+:root {
+	--c-bg-1: #242424;
+	--c-bg-2: #1a1a1a;
+	--c-danger-500: #ef4444;
+	--c-ghost-1: rgba(255, 255, 255, 0.035);
+	--c-ghost-2: rgba(255, 255, 255, 0.05);
+	--c-primary-400: #818cf8;
+	--c-primary-500: #6366f1;
+	--c-primary-600: #4f46e5;
+	--c-txt-1: rgba(255, 255, 255, 0.87);
+	--c-txt-2: rgba(255, 255, 255, 0.6);
+	--c-txt-3: rgba(255, 255, 255, 0.38);
+	--t-duration: 150ms;
+	--t-func: cubic-bezier(0, 0.25, 0.75, 1);
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+document,
+html,
+body {
+	background-color: var(--c-bg-1);
+	color: var(--c-txt-1);
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+html {
+	color-scheme: dark;
+}
+
+body {
+	overflow-x: hidden;
+	width: 100vw;
+	min-height: 100vh;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-sx-font-smoothing: grayscale;
+}
+
+h1,
+h2 {
+	letter-spacing: -0.02em;
+}
+
+h1 {
+	font-size: 2rem;
+	line-height: 2.5rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+p {
+	line-height: 1.75rem;
+	overflow-wrap: break-word;
+}
+
+p + * {
+	margin-top: 1rem;
+}
